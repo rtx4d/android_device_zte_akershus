@@ -140,6 +140,18 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 2248
 TARGET_SCREEN_WIDTH := 1080
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-impl:64 \
+    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.0-impl.recovery \
+    bootctrl.sdm845 \
+    bootctrl.sdm845.recovery
+
+PRODUCT_PACKAGES_DEBUG += \
+    bootctl
+
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
@@ -375,6 +387,15 @@ PRODUCT_USE_VNDK_OVERRIDE := true
 # Trust HAL
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
+
+# Update engine
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client
 
 # USB
 PRODUCT_PACKAGES += \
