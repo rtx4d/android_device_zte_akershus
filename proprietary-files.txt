@@ -1,3 +1,5 @@
+# Device proprietary files - from akershus' build P845A01:10/QKQ1.200517.002, unless pinned
+
 # ADSP - from NX619J PKQ1.180929.001
 vendor/bin/adsprpcd|2b616ee7b35c850953b052257900727a58479c8b
 vendor/lib64/libadsp_default_listener.so|97a8881da178b51cbcdb1d2f95e92a1032d8d22e
