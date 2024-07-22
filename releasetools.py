@@ -18,21 +18,19 @@ import common
 import re
 
 def FullOTA_InstallEnd(info):
-  OTA_UpdateFirmware(info)
   OTA_InstallEnd(info)
   return
 
 def IncrementalOTA_InstallEnd(info):
-  OTA_UpdateFirmware(info)
   OTA_InstallEnd(info)
   return
 
 def FullOTA_Assertions(info):
-  AddModemAssertion(info, info.input_zip)
+  AddTrustZoneAssertion(info, info.input_zip)
   return
 
 def IncrementalOTA_Assertions(info):
-  AddModemAssertion(info, info.target_zip)
+  AddTrustZoneAssertion(info, info.target_zip)
   return
 
 def AddImage(info, basename, dest):
@@ -50,24 +48,12 @@ def OTA_InstallEnd(info):
   AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
   return
 
-def OTA_UpdateFirmware(info):
-  modem_file = "INSTALL/firmware-update/NON-HLOS.bin"
-  if modem_file not in info.input_zip.namelist():
-    return
-
-  info.script.AppendExtra('ui_print("Patching modem image unconditionally...");')
-  info.script.AppendExtra('package_extract_file("install/firmware-update/NON-HLOS.bin", "/dev/block/bootdevice/by-name/modem");')
-  return
-
-def AddModemAssertion(info, input_zip):
-  android_info = info.input_zip.read("OTA/android-info.txt").decode('utf-8')
-  m = re.search(r'require\s+version-modem\s*=\s*(.+)', android_info)
-  nubiaUI_version = re.search(r'require\s+version-nubiaUI\s*=\s*(.+)', android_info)
-  if m and nubiaUI_version:
-    timestamp = m.group(1).rstrip()
-    firmware_version = nubiaUI_version.group(1).rstrip()
-    if ((len(timestamp) and '*' not in timestamp) and \
-        (len(firmware_version) and '*' not in firmware_version)):
-      cmd = 'assert(nubia.verify_modem("{}") == "1" || abort("ERROR: This package requires firmware from nubiaUI {}  or newer. Please upgrade firmware and retry!"););'
-      info.script.AppendExtra(cmd.format(timestamp, firmware_version))
+def AddTrustZoneAssertion(info, input_zip):
+  android_info = info.input_zip.read("OTA/android-info.txt")
+  m = re.search(r'require\s+version-trustzone\s*=\s*(\S+)', android_info.decode('utf-8'))
+  if m:
+    versions = m.group(1).split('|')
+    if len(versions) and '*' not in versions:
+      cmd = 'assert(xiaomi.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1" || abort("ERROR: This package requires firmware from an Android 10 based MIUI build. Please upgrade firmware and retry!"););'
+      info.script.AppendExtra(cmd)
   return
