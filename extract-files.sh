@@ -29,6 +29,9 @@ function blob_fixup() {
         system_ext/lib64/lib-imsvideocodec.so)
             ${PATCHELF} --add-needed "libgui_shim.so" "${2}"
             ;;
+        vendor/lib/libZEffectLib.so)
+            ${PATCHELF} --add-needed "libui_shim.so" "${2}"
+            ;;
     esac
 }
 

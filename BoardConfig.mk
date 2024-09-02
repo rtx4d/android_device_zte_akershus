@@ -54,9 +54,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
-# Audio
-TARGET_PROVIDES_AUDIO_EXTNS := true
-
 # Bluetooth
 BOARD_HAS_QCA_BT_SOC := "cherokee"
 
