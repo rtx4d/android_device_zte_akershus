@@ -28,6 +28,7 @@ ro.vendor.camera.                        u:object_r:camera_ro_prop:s0
 vendor.powerhal.           u:object_r:vendor_power_prop:s0
 
 # Sensors
+persist.sensor.accel.vendorname  u:object_r:sensors_prop:s0
 persist.sensor.sardisable  u:object_r:sensors_prop:s0
 
 # Thermal
