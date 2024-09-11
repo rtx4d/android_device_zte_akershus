@@ -35,6 +35,9 @@ function blob_fixup() {
         vendor/lib64/hw/audio.primary.sdm845.so)
             ${PATCHELF} --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
         ;;
+        vendor/lib/libZEffectLib.so)
+            ${PATCHELF} --add-needed "libui_shim.so" "${2}"
+            ;;
     esac
 }
 

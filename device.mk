@@ -158,6 +158,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     libdng_sdk.vendor \
     libgui_shim \
+    libui_shim.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Charger
