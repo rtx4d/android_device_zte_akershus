@@ -50,7 +50,7 @@ vendor/lib/rfsa/adsp/libVC1Dec.so
 vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so
 
 # Audio - A9
-vendor/lib64/hw/audio.primary.sdm845.so
+vendor/lib64/hw/audio.primary.sdm845.so|8bd5d7b583240ef56beb49e8a68ef38954f22437
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
@@ -61,7 +61,7 @@ vendor/lib64/libaudioparsers.so
 vendor/lib64/libcsd-client.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libtinycompress_vendor.so
-vendor/lib/hw/audio.primary.sdm845.so
+vendor/lib/hw/audio.primary.sdm845.so|5e997b08489f4ad9a8d0d94a03396edeaf6b697f
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbrtac.so
 vendor/lib/libadiertac.so

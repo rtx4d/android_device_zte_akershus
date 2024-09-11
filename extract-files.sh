@@ -29,6 +29,12 @@ function blob_fixup() {
         system_ext/lib64/lib-imsvideocodec.so)
             ${PATCHELF} --add-needed "libgui_shim.so" "${2}"
             ;;
+        vendor/lib/hw/audio.primary.sdm845.so)
+            ${PATCHELF} --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+            ;;
+        vendor/lib64/hw/audio.primary.sdm845.so)
+            ${PATCHELF} --replace-needed "libcutils.so" "libprocessgroup.so" "${2}"
+        ;;
     esac
 }
 
