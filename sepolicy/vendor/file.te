@@ -19,3 +19,6 @@ type sysfs_light_sensor, sysfs_type, fs_type;
 
 # Proximity Sensor
 type sysfs_proximity_sensor, sysfs_type, fs_type;
+
+# Fingerprint
+type sysfs_fpc, fs_type, sysfs_type;
