@@ -24,9 +24,6 @@ ro.camera.res.fmq.size                   u:object_r:camera_ro_prop:s0
 ro.camera.req.fmq.size                   u:object_r:camera_ro_prop:s0
 ro.vendor.camera.                        u:object_r:camera_ro_prop:s0
 
-# NFC
-ro.nfc.port                              u:object_r:nfc_prop:s0
-
 # PowerHAL
 vendor.powerhal.           u:object_r:vendor_power_prop:s0
 

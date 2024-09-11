@@ -38,13 +38,6 @@ on post-fs-data
     chmod 0777 /data/vendor/display/firmware/iris2p_ccf2.fw
     chmod 0777 /data/vendor/display
 
-# NFC
-on boot
-    # NFC
-    setprop ro.nfc.port "I2C"
-    chmod 0660 /dev/pn5xx
-    chown nfc system /dev/pn5xx
-
 # Charger
     # Create hvdcp_opti directory
     mkdir /mnt/vendor/persist/hvdcp_opti 0770 root system
