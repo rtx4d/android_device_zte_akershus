@@ -10,6 +10,7 @@ allow hal_sensors_default sysfs_proximity_sensor:file { read open write };
 
 get_prop(hal_sensors_default, adsprpc_prop)
 get_prop(hal_sensors_default, sensors_prop)
+set_prop(hal_sensors_default, sensors_prop)
 
 userdebug_or_eng(`
   get_prop(hal_sensors_default, sensors_dbg_prop)
