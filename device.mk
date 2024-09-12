@@ -281,8 +281,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0.vendor
 
 # Lights
-#PRODUCT_PACKAGES += \
-#    android.hardware.light-service.akershus
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.akershus
 
 # Lineage Health
 PRODUCT_PACKAGES += \
