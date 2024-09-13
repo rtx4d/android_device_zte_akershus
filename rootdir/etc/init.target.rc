@@ -47,3 +47,8 @@ on charger
     start power_off_alarm
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1 
+
+# DT2W
+on boot
+    chmod 0660 /proc/touchscreen/wake_gesture
+    chown system system /proc/touchscreen/wake_gesture

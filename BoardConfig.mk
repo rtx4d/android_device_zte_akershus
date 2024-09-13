@@ -114,6 +114,9 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/firmware_mnt:/firmware \
     /vendor/bt_firmware:/bt_firmware
 
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/touchscreen/wake_gesture"
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
