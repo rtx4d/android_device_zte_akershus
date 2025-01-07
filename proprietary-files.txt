@@ -155,52 +155,48 @@ vendor/lib/libfastrpc_utf_stub.so
 vendor/lib/libsdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so
 
-# Camera configs - A10
+# Camera configs - A9
 vendor/etc/camera/beautiful_app/preference_beautify0.json
 vendor/etc/camera/beautiful_app/preference_beautify1.json
 vendor/etc/camera/beautiful_app/preference_beautify2.json
+vendor/etc/camera/beautiful_app/switch_sensor0.xml
+vendor/etc/camera/beautiful_app/switch_sensor1.xml
 vendor/etc/camera/beautiful_fn/fn_default.xml
-vendor/etc/camera/fonts/NotoColorEmoji.ttf
-vendor/etc/camera/fonts/Roboto-Medium.ttf
+vendor/etc/camera/beautiful_fn/fn_imx363.xml
+vendor/etc/camera/beautiful_fn/fn_s5k3t1_aux.xml
+vendor/etc/camera/beautiful_fn/fn_s5k3t1_front.xml
+vendor/etc/camera/beautiful_fn/fn_sensor
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/color_filters_glinfo.bin
-vendor/etc/camera/color_filters_glinfo64.bin
-vendor/etc/camera/fonts.xml
-vendor/etc/camera/LDC_packdata_ZTE_project6161_07F.dat
-vendor/etc/camera/model_128.dlc
+vendor/etc/camera/ldc_tbl_2560x1920.bin
+vendor/etc/camera/ldc_tbl_5168x3876.bin
 vendor/etc/camera/model_32.dlc
+vendor/etc/camera/model_128.dlc
 vendor/etc/camera/vfbglinfo.bin
-vendor/etc/camera/vfbglinfo64.bin
 vendor/etc/camera/VfbTuningInterface.xml
 
-# Camera lib - A10
-vendor/lib/camera/components/com.qti.camx.chiiqutils.so
+# Camera lib - A9
+vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
+vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so
 vendor/lib/camera/components/com.qti.eisv2.so
 vendor/lib/camera/components/com.qti.eisv3.so
 vendor/lib/camera/components/com.qti.hvx.addconstant.so
 vendor/lib/camera/components/com.qti.hvx.binning.so
-vendor/lib/camera/components/com.qti.node.depth.so
 vendor/lib/camera/components/com.qti.node.dummyrtb.so
 vendor/lib/camera/components/com.qti.node.dummysat.so
 vendor/lib/camera/components/com.qti.node.eisv2.so
 vendor/lib/camera/components/com.qti.node.eisv3.so
-vendor/lib/camera/components/com.qti.node.fcv.so
 vendor/lib/camera/components/com.qti.node.gpu.so
 vendor/lib/camera/components/com.qti.node.memcpy.so
 vendor/lib/camera/components/com.qti.node.remosaic.so
 vendor/lib/camera/components/com.qti.node.stich.so
 vendor/lib/camera/components/com.qti.node.swregistration.so
 vendor/lib/camera/components/com.qti.stats.aec.so
-vendor/lib/camera/components/com.qti.stats.aecwrapper.so
 vendor/lib/camera/components/com.qti.stats.af.so
 vendor/lib/camera/components/com.qti.stats.afd.so
-vendor/lib/camera/components/com.qti.stats.afwrapper.so
 vendor/lib/camera/components/com.qti.stats.asd.so
 vendor/lib/camera/components/com.qti.stats.awb.so
 vendor/lib/camera/components/com.qti.stats.awbwrapper.so
-vendor/lib/camera/components/com.qti.stats.haf.so
-vendor/lib/camera/components/com.qti.stats.hafoverride.so
-vendor/lib/camera/components/com.qti.stats.localhistogram.so
 vendor/lib/camera/components/com.qti.stats.pdlib.so
 vendor/lib/camera/components/com.qti.stats.pdlibsony.so
 vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so
@@ -208,12 +204,9 @@ vendor/lib/camera/components/com.qtistatic.stats.aec.so
 vendor/lib/camera/components/com.qtistatic.stats.af.so
 vendor/lib/camera/components/com.qtistatic.stats.awb.so
 vendor/lib/camera/components/com.qtistatic.stats.pdlib.so
-vendor/lib/camera/components/com.zte.node.capturebokeh.so
 vendor/lib/camera/components/com.zte.node.capturepostprocess.so
-vendor/lib/camera/components/com.zte.node.realtimebokeh.so
 vendor/lib/camera/components/com.zte.node.realtimepostprocess.so
 vendor/lib/camera/components/com.zte.node.videopostprocess.so
-vendor/lib/camera/components/libdepthmapwrapper.so
 vendor/lib/camera/com.qti.ois.ois_bu63169.so
 vendor/lib/camera/com.qti.sensor.imx363.so
 vendor/lib/camera/com.qti.sensor.s5k3t1sp_aux.so
@@ -234,45 +227,42 @@ vendor/lib/camera/fdconfigpreview.bin
 vendor/lib/camera/fdconfigpreviewlite.bin
 vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
+vendor/lib/camera/titan17x_usecases.bin
 
-# Camera hal - A10
+# Camera hal - A9
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
 
-# Camera firmware - A10
+# Camera firmware - A9
 vendor/firmware/CAMERA_ICP.elf
 
-# Camera core - A10
+# Camera core - A9
+vendor/lib/libalhLDC.so
 vendor/lib/libarcsoft_dualcam_portraitlighting.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libcamxeffect.so
 vendor/lib/libcamxfdalgov7.so
-vendor/lib/libcamxfdalgov8.so
 vendor/lib/libcamxfdengine.so
 vendor/lib/libcamxmoviesolid.so
 vendor/lib/libcamxportraitbokehwrap.so
 vendor/lib/libcamxselfiebokeh.so
 vendor/lib/libcamxskinbeautiful.so
 vendor/lib/libcamxstatscore.so
-vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
-vendor/lib/libcamxwatermark.so
 vendor/lib/libcamxwidelencalc.so
 vendor/lib/libcom.qti.chinodeutils.so
+vendor/lib/libfn_facebeauty.so
 vendor/lib/libFNVfbEngineHAL.so
 vendor/lib/libfnxml.so
+vendor/lib/libmdsprpc.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
-vendor/lib/libremosaic_daemon.so
-vendor/lib/libZEffectLib.so
-vendor/lib/libcamera_nn_stub.so
-vendor/lib/libalhLDC.so
 vendor/lib/libmpbase.so
-vendor/lib/libtsvideoprocess.so
-vendor/lib/libalLDC.so
-vendor/lib/libskia_watermark.so
+vendor/lib/libremosaic_daemon.so
 vendor/lib/libstdc++.so
-vendor/lib/libskia.so
+vendor/lib/libswregistrationalgo.so
+vendor/lib/libtsvideoprocess.so
+vendor/lib/libZEffectLib.so|1080c78e96b56c50f2eb519001d9ca6e4a845d3d
 
 # CNE - from PNX - PNX_00WW_FIH-user-11-RKQ1.200906.002-00WW_6_21F-release-keys
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|88da95df5925ab3c173f951cfe56c95699908359
