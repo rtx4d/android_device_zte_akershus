@@ -19,6 +19,7 @@ ro.vendor.use_data_netmgrd=true
 
 # Display post-processing
 ro.qualcomm.cabl=0
+ro.surface_flinger.has_wide_color_display=true
 ro.vendor.display.ad=1
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
