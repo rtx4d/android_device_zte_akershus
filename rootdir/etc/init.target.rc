@@ -1,3 +1,16 @@
+on init
+    # Torch
+    chown system camera /sys/class/leds/led:torch_0/brightness
+    chown system camera /sys/class/leds/led:torch_1/brightness
+    chown system camera /sys/class/leds/led:flash_0/brightness
+    chown system camera /sys/class/leds/led:flash_1/brightness
+    chown system camera /sys/class/leds/led:switch_0/brightness
+    chmod 0664 /sys/class/leds/led:torch_0/brightness
+    chmod 0664 /sys/class/leds/led:torch_1/brightness
+    chmod 0664 /sys/class/leds/led:flash_0/brightness
+    chmod 0664 /sys/class/leds/led:flash_1/brightness
+    chmod 0664 /sys/class/leds/led:switch_0/brightness
+
 # FPC1028
 on boot
     ## added for fpc fingerprint
