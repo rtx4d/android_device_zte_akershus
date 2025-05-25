@@ -218,7 +218,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    NubiaDoze
+    ZTEDoze
 
 # DRM
 PRODUCT_PACKAGES += \
