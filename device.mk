@@ -97,12 +97,22 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl:32 \
-    android.hardware.audio.effect@6.0-impl:32 \
+    android.hardware.audio@7.1-impl:32 \
+    android.hardware.audio.effect@7.1-impl:32 \
     android.hardware.audio.service \
     android.hardware.soundtrigger@2.2-impl:32 \
+    audio.primary.sdm845 \
+    sound_trigger.primary.sdm845 \
     audio.r_submix.default \
     audio.usb.default \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libsndmonitor \
+    libspkrprot \
+    libssrec \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
@@ -138,7 +148,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
-    android.hardware.bluetooth.audio@2.1-impl:32 \
+    android.hardware.bluetooth.audio-impl:32 \
     audio.bluetooth.default \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
