@@ -671,6 +671,10 @@
         <path name="deep-buffer-playback speaker" />
     </path>
 
+    <path name="deep-buffer-playback receiver">
+        <path name="deep-buffer-playback voice-handset" />
+    </path>
+
     <path name="deep-buffer-playback voice-handset">
         <path name="deep-buffer-playback speaker" />
     </path>
@@ -757,6 +761,10 @@
         <path name="low-latency-playback speaker" />
     </path>
 
+    <path name="low-latency-playback receiver">
+        <path name="low-latency-playback voice-handset" />
+    </path>
+
     <path name="low-latency-playback display-port">
         <ctl name="DISPLAY_PORT Mixer MultiMedia5" value="1" />
     </path>
@@ -829,6 +837,10 @@
 
     <path name="audio-ull-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia8" value="1" />
+    </path>
+
+    <path name="audio-ull-playback receiver">
+        <path name="audio-ull-playback voice-handset" />
     </path>
 
     <path name="audio-ull-playback voice-speaker">
@@ -1882,6 +1894,10 @@
         <ctl name="Voip_Tx Mixer SLIM_0_TX_Voip" value="1" />
     </path>
 
+    <path name="compress-voip-call receiver">
+        <path name="compress-voip-call voice-handset" />
+    </path>
+
     <path name="afe-loop-playback voice-speaker">
         <ctl name="QUAT_MI2S_RX Port Mixer SLIM_0_TX" value="1" />
     </path>
@@ -1898,6 +1914,10 @@
 
     <path name="afe-loop-playback voice-handset">
         <ctl name="QUAT_MI2S_RX Port Mixer SLIM_0_TX" value="1" />
+    </path>
+
+    <path name="afe-loop-playback receiver">
+        <path name="afe-loop-playback voice-handset" />
     </path>
 
     <path name="afe-loop-playback handset">
@@ -1966,11 +1986,16 @@
     </path>
 
     <path name="voicemmode1-call voice-handset">
+        <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode1" value="1" />
         <ctl name="VoiceMMode1_Tx Mixer SLIM_0_TX_MMode1" value="1" />
     </path>
 
     <path name="voicemmode1-call handset">
+        <path name="voicemmode1-call voice-handset" />
+    </path>
+
+    <path name="voicemmode1-call receiver">
         <path name="voicemmode1-call voice-handset" />
     </path>
 
@@ -2030,12 +2055,53 @@
     </path>
 
     <path name="voicemmode2-call voice-handset">
+        <ctl name="VOC_EXT_EC MUX" value="QUAT_MI2S_TX" />
         <ctl name="QUAT_MI2S_RX_Voice Mixer VoiceMMode2" value="1" />
         <ctl name="VoiceMMode2_Tx Mixer SLIM_0_TX_MMode2" value="1" />
     </path>
 
     <path name="voicemmode2-call handset">
         <path name="voicemmode2-call voice-handset" />
+    </path>
+
+    <path name="voicemmode2-call receiver">
+        <path name="voicemmode2-call voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback receiver">
+        <path name="compress-offload-playback voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback2 receiver">
+        <path name="compress-offload-playback2 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback3 receiver">
+        <path name="compress-offload-playback3 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback4 receiver">
+        <path name="compress-offload-playback4 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback5 receiver">
+        <path name="compress-offload-playback5 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback6 receiver">
+        <path name="compress-offload-playback6 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback7 receiver">
+        <path name="compress-offload-playback7 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback8 receiver">
+        <path name="compress-offload-playback8 voice-handset" />
+    </path>
+
+    <path name="compress-offload-playback9 receiver">
+        <path name="compress-offload-playback9 voice-handset" />
     </path>
 
     <path name="voicemmode2-call headphones">
@@ -2093,6 +2159,10 @@
 
     <path name="audio-playback-voip handset">
         <path name="audio-playback-voip speaker" />
+    </path>
+
+    <path name="audio-playback-voip receiver">
+        <path name="audio-playback-voip voice-handset" />
     </path>
 
     <path name="audio-playback-voip voice-handset">
@@ -2383,6 +2453,10 @@
         <ctl name="stereo Profile" value="HandsetL" />
     </path>
 
+    <path name="receiver">
+        <path name="handset" />
+    </path>
+
     <path name="handset-hac">
         <ctl name="Receiver Switch" value="On" />
         <ctl name="stereo Profile" value="HandsetL" />
@@ -2557,7 +2631,7 @@
     </path>
 
     <path name="voice-speaker-2">
-        <path name="speaker-mono-2" />
+        <path name="voice-speaker" />
     </path>
 
     <path name="voice-speaker-fluid">
@@ -3133,6 +3207,10 @@
 
     <path name="mmap-playback voice-handset">
         <path name="mmap-playback speaker" />
+    </path>
+
+    <path name="mmap-playback receiver">
+        <path name="mmap-playback voice-handset" />
     </path>
 
     <path name="mmap-playback headphones">
