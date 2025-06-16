@@ -116,6 +116,9 @@ ro.bluetooth.wipower=false
 vendor.bluetooth.soc=cherokee
 vendor.qcom.bluetooth.soc=cherokee
 
+# Camera
+persist.camera.expose.aux=1
+
 # Charger
 ro.charger.enable_suspend=true
 
