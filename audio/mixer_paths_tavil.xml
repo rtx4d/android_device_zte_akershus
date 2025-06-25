@@ -598,23 +598,52 @@
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="DISPLAY_PORT" />
     </path>
 
+    <path name="echo-reference headphones-44.1">
+    </path>
+
+    <path name="echo-reference voip-earpiece">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_RX" />
+    </path>
+
+    <path name="echo-reference earpiece">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="SLIM_RX" />
+    </path>
+
+    <path name="echo-reference voip-headphones">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_6_RX" />
+    </path>
+
+    <path name="echo-reference voip-display-port">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="DISPLAY_PORT" />
+    </path>
+
+    <path name="echo-reference display-port">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="DISPLAY_PORT" />
+    </path>
+
+    <path name="echo-reference voip-speaker">
+        <ctl name="EC Reference Channels" value="One"/>
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="QUAT_MI2S_TX" />
+    </path>
+
     <path name="echo-reference speaker">
         <ctl name="AUDIO_REF_EC_UL1 MUX" value="QUAT_MI2S_TX" />
     </path>
 
-    <path name="echo-reference voice-speaker">
-        <path name="echo-reference speaker" />
+    <path name="echo-reference voip-bt-sco-headset">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="SLIM_7_RX" />
     </path>
 
-    <path name="echo-reference handset">
-        <path name="echo-reference speaker" />
+    <path name="echo-reference bt-sco-headset">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="SLIM_7_RX" />
     </path>
 
-    <path name="echo-reference voice-handset">
-        <path name="echo-reference speaker" />
+    <path name="echo-reference voip-usb-headphones">
+        <ctl name="AUDIO_REF_EC_UL10 MUX" value="USB_AUDIO_RX" />
     </path>
 
-    <path name="echo-reference headphones-44.1">
+    <path name="echo-reference usb-headphones">
+        <ctl name="AUDIO_REF_EC_UL1 MUX" value="USB_AUDIO_RX" />
     </path>
 
     <path name="deep-buffer-playback">
@@ -624,7 +653,6 @@
     <path name="deep-buffer-playback speaker-protected">
         <path name="deep-buffer-playback" />
     </path>
-
     <path name="deep-buffer-playback speaker">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
