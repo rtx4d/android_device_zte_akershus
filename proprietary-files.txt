@@ -88,6 +88,8 @@ vendor/firmware/tfa98xx.cnt
 # ANT+ (system) - from Z01R WW_user_100.10.107.123_20210131
 product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
 product/lib/com.qualcomm.qti.ant@1.0.so|a6e5dc519d76a0d938701b8773df19cfa98596b4
+product/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+product/lib/com.qualcomm.qti.ant@1.0.so:system/lib/com.qualcomm.qti.ant@1.0.so|a6e5dc519d76a0d938701b8773df19cfa98596b4
 -system/lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
 -system/lib/libantradio.so|d343bed6e26f99d9870f730303096f6ea8a9bcf8
 
