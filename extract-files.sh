@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020, 2024 The LineageOS Project
+# Copyright (C) 2017-2020, 2024-2025 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -37,6 +37,9 @@ function blob_fixup() {
         ;;
         vendor/lib/libZEffectLib.so)
             ${PATCHELF} --add-needed "libui_shim.so" "${2}"
+            ;;
+        vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             ;;
     esac
 }
