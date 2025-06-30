@@ -174,10 +174,6 @@ PRODUCT_PACKAGES += \
     libui_shim.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
-# Charger
-PRODUCT_PACKAGES += \
-    libsuspend
-
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
