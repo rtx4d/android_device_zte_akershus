@@ -156,6 +156,7 @@ TARGET_RIL_VARIANT := caf
 VENDOR_SECURITY_PATCH := 2020-08-01
 
 # SELinux
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
