@@ -41,6 +41,9 @@ function blob_fixup() {
         vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service)
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             ;;
+         vendor/lib64/libwvhidl.so|vendor/lib64/mediadrm/libwvdrmengine.so)
+            "${PATCHELF}" --add-needed "libcrypto_shim" "${2}"
+            ;;
     esac
 }
 
