@@ -18,3 +18,6 @@ type sysfs_proximity_sensor, sysfs_type, fs_type;
 
 # Fingerprint
 type sysfs_fpc, fs_type, sysfs_type;
+
+# Touchpanel
+type sysfs_touchpanel, fs_type, sysfs_type;
