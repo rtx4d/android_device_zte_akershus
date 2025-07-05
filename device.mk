@@ -171,13 +171,13 @@ PRODUCT_PACKAGES += \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
+    init.qcom.recovery.rc \
     init.qcom.power.rc \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
-    init.recovery.qcom.rc \
     ueventd.qcom.rc
 
 # Configstore
@@ -196,7 +196,8 @@ PRODUCT_COPY_FILES += \
 
 # Device fstab
 PRODUCT_PACKAGES += \
-    fstab.qcom
+    fstab.qcom \
+    fstab.qcom.ramdisk
 
 # Display
 PRODUCT_PACKAGES += \
