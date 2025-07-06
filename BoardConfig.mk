@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-BOARD_VENDOR := zte
-
 DEVICE_PATH := device/zte/akershus
 
 BUILD_BROKEN_DUP_RULES := true
