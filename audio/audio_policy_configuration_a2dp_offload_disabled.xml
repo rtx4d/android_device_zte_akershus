@@ -311,9 +311,6 @@
         <!-- A2DP Input Audio HAL -->
         <xi:include href="/vendor/etc/bluetooth_audio_policy_configuration.xml"/>
 
-        <!-- Bluetooth Audio HAL for hearing aid -->
-        <xi:include href="/vendor/etc/hearing_aid_audio_policy_configuration.xml"/>
-
         <!-- Usb Audio HAL -->
         <xi:include href="/vendor/etc/usbv2_audio_policy_configuration.xml"/>
 
