@@ -75,13 +75,12 @@ vendor/lib/soundfx/libvolumelistener.so
 vendor/firmware/tfa98xx.cnt
 
 # ANT+ (system) - from Z01R WW_user_100.10.107.123_20210131
-product/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
-product/lib64/com.qualcomm.qti.ant@1.0.so:system/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
--system/lib64/libantradio.so|43f6105678c082216f1606d8dd43fa1b0b753d7e
+product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@1.0.so|f40868ad57012f1a512b14c889bc8380652cc50f
+system/lib64/libantradio.so:system_ext/lib64/libantradio.so|c1d700c334504c72ae1214c8716ba4364a90d132
 
 # ANT+ (vendor) - from Z01R WW_user_100.10.107.123_20210131
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|c62ace5431a6ab113d8762e1c336085fcf686f53
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|4e7dd19fb51e02a36c5154bf7609822f5279b4c5
+vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor|4e7dd19fb51e02a36c5154bf7609822f5279b4c5
 
 # Bluetooth (A2DP) - A10
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
@@ -206,14 +205,13 @@ vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcamxwidelencalc.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libfn_facebeauty.so
-vendor/lib/libFNVfbEngineHAL.so
+vendor/lib/libFNVfbEngineHAL.so|ae40ece6b9de8bb586aa0c4e7867ce6acfef898a
 vendor/lib/libfnxml.so
 vendor/lib/libmdsprpc.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so|96492f80b9a1d74f8052f278c1e534380e07be31
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmpbase.so
 vendor/lib/libremosaic_daemon.so
-vendor/lib/libstdc++.so
 vendor/lib/libswregistrationalgo.so
 vendor/lib/libtsvideoprocess.so
 vendor/lib/libZEffectLib.so|1080c78e96b56c50f2eb519001d9ca6e4a845d3d
@@ -260,15 +258,16 @@ vendor/lib64/libxml.so
 vendor/lib64/vendor.qti.data.factory@2.0.so
 vendor/lib64/vendor.qti.data.factory@2.1.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
-vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so
-vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.0.so
-vendor/lib64/vendor.qti.hardware.data.connection@1.1.so
-vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so
-vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.data.connection@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.data.connection@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.data.iwlan@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
+vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
@@ -344,7 +343,7 @@ system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk|53c2d0eb6669a983db80562aa8c1
 system/framework/tcmclient.jar|22858e8bb7e3f956e487dc6764ad8250f118d7ac
 vendor/bin/dpmQmiMgr|4fe936478b0da1ee20c6222234b80d478a72cc2a
 vendor/etc/init/dpmQmiMgr.rc|1538743661a5c48c15cd105beaad20f72953885a
-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
+vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=_vendor|c5c893e86d38b8aa8cd277ccb8b011fb2f19995e
 vendor/lib64/libdpmqmihal.so|ffcd85e1f6bf7d54f37953edc2cb2c4a61fc894a
 
 # DRM - from Z01R WW_user_100.10.107.123_20210131
@@ -402,6 +401,7 @@ vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|b94476f03424846bcf2bcecbf290d992a5cd
 vendor/lib64/libaoa.so|548073afa1ce13cb9d9b252dd933e91d835f02d8
 vendor/lib64/libbatching.so|eafd89f91d275c9946a66f0f322ea4c0fa1cc5d0
 vendor/lib64/libcacertclient.so|90281ef665d6a66ad7aa0806d97c20866fe1a83d
+vendor/lib64/libcdfw_remote_api.so|2939e767c15fd965322d6e11045fa3fb851b29d4
 vendor/lib64/libdataitems.so|f13cb93394d8aae1eef85c4730b5c8f9ace092a9
 vendor/lib64/libgdtap.so|510075724d368816c89a5f9e76b2529484e03d36
 vendor/lib64/libgeofencing.so|a6fffe98ddc82de53cf353c4f3fca602702a8330
@@ -421,6 +421,7 @@ vendor/lib64/liblocationservice.so|b1553eb7c02451d7570d0e91bf33be91d8cdb7ff
 vendor/lib64/liblowi_client.so|fd5cb6bb1c4eaacf3ef8a93e083d37d117137096
 vendor/lib64/liblowi_wifihal.so|db68a6c99c2fb8315d5f7a6954cdcb894a7de8ad
 vendor/lib64/libminksocket.so|fa81f5c47ee5a1f05fee71c464095bb1e89c26fd
+vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor|b8531bbb027918cd9338453409e51946fd8a4ef0
 vendor/lib64/libqcc_file_agent.so|ddfc0babc52ab12b6b159b36505bc0b5ef460a0a
 vendor/lib64/libqdma_file_agent.so|f86c29c4a23558be984248b512ccf4b1de672946
 vendor/lib64/libslimclient.so|4ef9783dfa3c3815b7a3caa6b634de5158a866be
@@ -433,6 +434,7 @@ vendor/lib64/vendor.qti.gnss@2.1.so|391a0e7bdd477ba519aaddc1b0711840e3362dc8
 vendor/lib64/vendor.qti.gnss@3.0.so|b67a1ff507cfb4165a9dc970dc54aa26cc731e6f
 vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d079968
 vendor/lib64/vendor.qti.gnss@4.0.so|7d343c73e6720434045cc38ea0e570ae9d03cd51
+vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
 
 # Graphics (Adreno) - from PNX - RKQ1.200906.002
 vendor/lib/egl/eglSubDriverAndroid.so|cc5acc02889131a29b624b4c19ab90b8273f393d
@@ -516,12 +518,12 @@ vendor/etc/init/ims_rtp_daemon.rc
 vendor/etc/init/imsdatadaemon.rc
 vendor/etc/init/imsqmidaemon.rc
 vendor/etc/init/imsrcsd.rc
-vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
-vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
-vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
-vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
-vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
+vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so;MODULE_SUFFIX=_vendor
+vendor/lib64/com.qualcomm.qti.uceservice@2.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/com.qualcomm.qti.uceservice@2.1.so;MODULE_SUFFIX=_vendor
 vendor/lib64/librcc.so
 vendor/lib64/lib-imscmservice.so
 vendor/lib64/lib-imsdpl.so
@@ -535,19 +537,19 @@ vendor/lib64/lib-rtpcore.so
 vendor/lib64/lib-rtpsl.so
 vendor/lib64/lib-siputility.so
 vendor/lib64/lib-uceservice.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.radio.ims@1.5.so
 vendor/lib64/vendor.qti.hardware.radio.ims@1.6.so
-vendor/lib64/vendor.qti.ims.callinfo@1.0.so
-vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so
-vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
-vendor/lib64/vendor.qti.imsrtpservice@2.0.so
+vendor/lib64/vendor.qti.ims.callinfo@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/vendor.qti.imsrtpservice@2.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@2.1.so
+vendor/lib64/vendor.qti.imsrtpservice@2.1.so;MODULE_SUFFIX=_vendor
 
 # IPA firmware - A10
 vendor/etc/init/ipa_fws.rc
@@ -579,7 +581,6 @@ vendor/lib/libgcs-calwrapper.so|4a36f7e7ffceaf2ed50c4b2b170e0fd097c363f6
 vendor/lib/libgcs-ipc.so|327405941e60c359d99eb55569d405dd2f297ea4
 vendor/lib/libgcs-osal.so|e324e12ad5d8d5116699eb87cf7b87a5a3a54133
 vendor/lib/libgcs.so|fe7058d3482d83321b11a1bfef46ab5f82708d54
-vendor/lib/libjnihelper.so|51fce4408e81c8d38ea66af95b6d734bfdf6d147
 vendor/lib/liblistenjni.so|18a34adf428a5ed877cd6404279b56899bfe7745
 vendor/lib/liblistensoundmodel2.so|9186535f52df2f6b11e0258e5d320d080801c94e
 vendor/lib/libmulawdec.so|5895a96dbd18867d13b66a3486b253957ed58920
@@ -675,6 +676,7 @@ vendor/etc/init/qcrild.rc
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
+vendor/lib64/libminkdescriptor.so
 vendor/lib64/libmodemapi_vendor.so
 vendor/lib64/libnetmgr.so
 vendor/lib64/libnetmgr_common.so
@@ -683,6 +685,7 @@ vendor/lib64/libnetmgr_rmnet_ext.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
+vendor/lib64/libqcbor.so
 vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqrtr.so
 vendor/lib64/libqsocket.so
@@ -716,13 +719,8 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 vendor/lib64/vendor.zte.hardware.radio@1.0.so
-vendor/lib/libconfigdb.so
 vendor/lib/liblqe.so
 vendor/lib/libmdmdetect.so
-vendor/lib/libnetmgr.so
-vendor/lib/libnetmgr_common.so
-vendor/lib/libnetmgr_nr_fusion.so
-vendor/lib/libnetmgr_rmnet_ext.so
 vendor/lib/libpdmapper.so
 vendor/lib/libpdnotifier.so
 vendor/lib/libqcrilFramework.so
@@ -762,7 +760,7 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/sensors.ssc.so
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|bd4840865392cc434d9c7db727e3feccab674842
 vendor/lib/libsensorslog.so
 vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
@@ -881,8 +879,6 @@ vendor/lib/libscveBlobDescriptor_stub.so|6a67382a5df168279738647a95c7f0ab864c5cc
 vendor/lib/libscveBlobDescriptor.so|ee45670c33ff150ad8863eb81ac6eae130f75236
 vendor/lib/libscveCommon_stub.so|b3915136fe161dbe9aed286e5553f74606d40353
 vendor/lib/libscveCommon.so|c5b1f38d06b51573043a8ba943d36fdf70875f39
-vendor/lib/libscveFaceLandmarks.so|d1ba20425666fc52a3831f24fb82acce3a5761b2
-vendor/lib/libscveFaceRecognition.so|58d4069d250ec214483fc660df05da3fc1816886
 vendor/lib/libscveObjectSegmentation_stub.so|c788a5f687b689c3cadd155f4e44e934a890a6ff
 vendor/lib/libscveObjectSegmentation.so|2d29fa5046750c21d42cf53de93bd42ae1c8013e
 vendor/lib/libscveObjectTracker_stub.so|67a418d42e504945f407dbd92fab4b313230c8ef
