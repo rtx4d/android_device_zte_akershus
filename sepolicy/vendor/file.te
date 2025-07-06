@@ -21,3 +21,6 @@ type sysfs_fpc, fs_type, sysfs_type;
 
 # Touchpanel
 type sysfs_touchpanel, fs_type, sysfs_type;
+
+# Wirless Charger
+type sysfs_wireless_supply, sysfs_type, fs_type;
