@@ -64,7 +64,6 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.ims.callinfo@1.0',
         'vendor.qti.ims.rcsconfig@1.0',
-        'vendor.qti.ims.rcsconfig@1.1',
         'vendor.qti.imsrtpservice@2.0.so',
         'vendor.qti.imsrtpservice@2.1.so',
     ): lib_fixup_vendor_suffix,
